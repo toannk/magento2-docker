@@ -27,7 +27,7 @@ RUN pecl install -o xdebug
 # Install nvm, node, grunt
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash \
     && . ~/.bashrc \
-    && nvm install 12 \
+    && nvm install v12.22.1 \
     && npm i -g grunt-cli
 
 # Install Composer
